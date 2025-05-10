@@ -5,17 +5,15 @@
 }
 
 .body {
-    display: grid;
-    grid-template-areas: 
-    'header header header header'
-		'sidebar main main main'
-		'footer footer footer footer';
-        background-color: rgb(192, 183, 183);
-        grid-template-rows: 300px 1frpx 100px;
-        grid-template-columns: 150px 1fr;
-     min-height: 100vh;
-
-
+   display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  background-color: rgb(192, 183, 183);
 }
 
 .header {
@@ -46,14 +44,115 @@ height: 50px;
 .nav_img img {
 }
 
+.btn_icon {
+display: flex;
+justify-content: right;
+
+}
+
+.btn_i {  
+}
+
 .sidebar {
     grid-area: sidebar;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px 10px;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+gap: 20px;
 }
 
 .main {
-    grid-area: main;
+     grid-area: main;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 500px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background-color: aliceblue;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.card_img{
+height: 51%;
+}
+
+.card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.card_text {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 52px;
+      color: #555;
+}
+
+h3 span {
+  color: #555;
+  font-family: 'Georgia', serif;
+}
+
+.card_btn {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.btn {
+   width: 350px;
+  padding: 20px;
+  background-color: rgb(197, 26, 197);
+  color: aliceblue; 
+   border: none;
+  outline: none;
+   cursor: pointer; 
+     font-family: 'Georgia', serif;
+font-size: medium;
+margin-top: 40px;
 }
 
 .footer {
     grid-area: footer;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .body {
+    grid-template-areas:
+      "header header header header"
+      "sidebar main main main"
+      "footer footer footer footer";
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 300px 1fr 100px;
+  }
 }

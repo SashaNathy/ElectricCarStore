@@ -276,6 +276,7 @@ h3 span {
     padding: 20px;
     height: auto;
     width: 100%;
+     padding-bottom: 80px;
   }
 
   .container {
@@ -344,14 +345,13 @@ h3 span {
 /* Pantallas más grandes */
 @media (min-width: 992px) {
   .layout {
-    height: 100vh;
-    display: grid;
-    grid-template-areas:
-      "sidebar header"
-      "sidebar main"
-      "footer footer";
-     grid-template-columns: 250px 1fr; 
-    grid-template-rows: auto 1fr auto;
+     display: grid;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "footer footer";
+   grid-template-columns: 1fr 11fr;
+  grid-template-rows: auto 1fr auto;
   }
 
   .header {
@@ -380,7 +380,7 @@ h3 span {
     padding: 20px;
     height: auto;
     width: 100%; 
-     padding-bottom: 80px;
+     padding-bottom: 100px;
   }
 
   .container {
@@ -436,13 +436,8 @@ h3 span {
 }     
 
   .footer {
-    position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  grid-area: footer;
+  height: 60px;
   background-color: #f1f1f1;
-  height: 60px;  /* Ajusta la altura según lo necesites */
-  z-index: 10; 
-    
   }
 }

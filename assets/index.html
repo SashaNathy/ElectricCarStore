@@ -5,54 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electric Cars</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/8c0839d651.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
   </head>
-  <body class="body">
-    <header class="header">
-      <div class="navbar">
-        <nav class="navbar_tittle">
-          <img class="nav_img" src="./imgs/logocar.png" alt="logo carro" />
-          <p>Electric Cars</p>
-          <div class="btn_icon">
-            <button class="btn_i">
-              <i class="fa-solid fa-bars"></i>
-            </button>
+  <body>
+    <div class="layout">
+      <header class="header">
+        <p>Ordenar por:</p>
+        <div class="search">
+          <label for="price">Precio</label>
+          <select name="Precio" id="price" class="precio">
+            <option value="Price"></option>
+            <option value="Price">Car City $1500</option>
+            <option value="Price">Car City $2000</option>
+            <option value="Price">Car City $3000</option>
+            <option value="Price">Car City $4000</option>
+            <option value="Price">Car City $5000</option>
+          </select>
+        </div>
+      </header>
+      <aside class="sidebar">
+        <div class="logo">
+          <div class="container_logo">
+            <img class="nav_img" src="./imgs/logocar.png" alt="logo carro" />
+          </div>
+          <div class="logo_tittle">
+            <p>Electric Cars</p>
+          </div>
+        </div>
+
+        <!-- Navegación principal colocada debajo -->
+        <div class="navegador">
+          <ul>
+            <li>Inicio</li>
+            <li>Catalogo</li>
+            <li>Ofertas</li>
+            <li>Contactos</li>
+          </ul>
+        </div>
+        <nav class="menu">
+          <a href="#menu" class="nav_target">
+            <span class="material-symbols-outlined"> menu </span>
+          </a>
+          <div class="nav_links navegador" id="menu">
+            <a href="#" class="nav_link">Inicio</a>
+            <a href="#" class="nav_link">Catalogo</a>
+            <a href="#" class="nav_link">Ofertas</a>
+            <a href="#" class="nav_link">Contactos</a>
+            <a href="#" class="close-btn">✕</a>
           </div>
         </nav>
-      </div>
-    </header>
-    <aside class="aside">
-      <div class="container">
-        <div class="categories">
-          <p>Incio</p>
-          <p>Catalogo</p>
-          <p>Ofertas</p>
-          <p>Contactos</p>
+      </aside>
+      <main class="main">
+        <div class="container">
+          <div class="card">
+            <figure class="card_img">
+              <img src="./imgs/imagencarro.jpg" alt="imagen carro" />
+            </figure>
+            <div class="card_text">
+              <h3><span>Model City Car</span></h3>
+            </div>
+            <div class="card_btn">
+              <button class="btn_car">Ver mas</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card_img">
+              <img src="./imgs/imagencarro.jpg" alt="imagen carro" />
+            </figure>
+            <div class="card_text">
+              <h3><span>Model City Car</span></h3>
+            </div>
+            <div class="card_btn">
+              <button class="btn_car">Ver mas</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card_img">
+              <img src="./imgs/imagencarro.jpg" alt="imagen carro" />
+            </figure>
+            <div class="card_text">
+              <h3><span>Model City Car</span></h3>
+            </div>
+            <div class="card_btn">
+              <button class="btn_car">Ver mas</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card_img">
+              <img src="./imgs/imagencarro.jpg" alt="imagen carro" />
+            </figure>
+            <div class="card_text">
+              <h3><span>Model City Car</span></h3>
+            </div>
+            <div class="card_btn">
+              <button class="btn_car">Ver mas</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card_img">
+              <img src="./imgs/imagencarro.jpg" alt="imagen carro" />
+            </figure>
+            <div class="card_text">
+              <h3><span>Model City Car</span></h3>
+            </div>
+            <div class="card_btn">
+              <button class="btn_car">Ver mas</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card_img">
+              <img src="./imgs/imagencarro.jpg" alt="imagen carro" />
+            </figure>
+            <div class="card_text">
+              <h3><span>Model City Car</span></h3>
+            </div>
+            <div class="card_btn">
+              <button class="btn_car">Ver mas</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card_img">
+              <img src="./imgs/imagencarro.jpg" alt="imagen carro" />
+            </figure>
+            <div class="card_text">
+              <h3><span>Model City Car</span></h3>
+            </div>
+            <div class="card_btn">
+              <button class="btn_car">Ver mas</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure class="card_img">
+              <img src="./imgs/imagencarro.jpg" alt="imagen carro" />
+            </figure>
+            <div class="card_text">
+              <h3><span>Model City Car</span></h3>
+            </div>
+            <div class="card_btn">
+              <button class="btn_car">Ver mas</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </aside>
-    <main class="main"></main>
-    <div class="card">
-      <figure class="card_img">
-        <img src="./imgs/imagencarro.jpg" alt="imagen carro" />
-      </figure>
-      <div class="card_text">
-        <h3><span>Model City Car</span></h3>
-      </div>
-      <div class="card_btn">
-        <button class="btn_car">Ver mas</button>
-      </div>
+
+        <div class="pagination">
+          <div class="pag_button">
+            <button>«</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>»</button>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <button class="btn_footer">
+           <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </button>
+        <div class="footer_tittle">
+          <p>Todos los derechos reservados</p>
+        </div>
+      </footer>
     </div>
-    <div class="pagination">
-      <button>«</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button
-      ><button>»</button>
-    </div>
-    <footer class="footer"></footer>
+     <script src="https://kit.fontawesome.com/8c0839d651.js" crossorigin="anonymous"></script>
   </body>
 </html>
